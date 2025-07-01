@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <title>rentIT - Location de Trottinettes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(120deg, #00b894, #0984e3);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    main {
+      padding: 30px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    form {
+      background-color: white;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+      margin-bottom: 25px;
+      text-align: left;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 0.95em;
+      color: #444;
+    }
+    input[type="date"],
+    input[type="time"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      font-size: 1em;
+      background-color: #f9f9f9;
+      transition: border-color 0.3s;
+    }
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #00b894;
+      outline: none;
+      background-color: #fff;
+    }
+    button {
+      width: 100%;
+      background-color: #00b894;
+      color: white;
+      padding: 16px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 1.1em;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #019875;
+    }
+    .note, .remarque {
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      font-size: 0.9em;
+      color: #444;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenue sur rentIT</h1>
+    <p>Louez votre trottinette électrique à Agadir pour seulement <strong>10 Dh/heure</strong> avec livraison gratuite à domicile !</p>
+  </header>
+
+  <main>
+    <h2 style="text-align: center; margin-bottom: 30px;">Réservez votre trottinette</h2>
+    <form action="https://wa.me/0644373744" method="get" target="_blank">
+
+      <div class="form-group">
+        <label for="date">Date de réservation</label>
+        <input type="date" name="date" id="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="heure">Heure de début</label>
+        <input type="time" name="heure" id="heure" required>
+      </div>
+
+      <div class="form-group">
+        <label for="duree">Durée souhaitée (heures)</label>
+        <select name="duree" id="duree" required>
+          <option value="1">1 heure</option>
+          <option value="2">2 heures</option>
+          <option value="3">3 heures</option>
+          <option value="4">4 heures</option>
+          <option value="5">5 heures</option>
+          <option value="6">6 heures</option>
+          <option value="7">7 heures</option>
+          <option value="8">8 heures</option>
+          <option value="9">9 heures</option>
+          <option value="10">10 heures</option>
+        </select>
+      </div>
+
+      <div class="remarque">
+        📌 <strong>Remarque :</strong> Lors de la livraison de la trottinette, le client devra signer une charte de responsabilité sur place.
+      </div>
+
+      <div class="note">
+        En cliquant sur le bouton ci-dessous, vous serez redirigé vers WhatsApp pour finaliser votre réservation.
+      </div>
+
+      <button type="submit">Finaliser</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 rentIT - Agadir. Tous droits réservés.
+  </footer>
+</body>
+</html>

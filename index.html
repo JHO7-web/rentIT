@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Accueil - rentIT</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #f4f9f9);
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background-image: url('img/main.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 15px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background-color: #00b894;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: background 0.3s;
+      z-index: 1;
+      position: relative;
+    }
+    .btn:hover {
+      background-color: #019875;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: #fff;
+    }
+    .feature {
+      flex: 1 1 250px;
+      max-width: 300px;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 12px;
+      background-color: #eafaf1;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+    .feature h3 {
+      color: #00b894;
+      margin-bottom: 10px;
+    }
+    .feature p {
+      font-size: 0.95em;
+      color: #444;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #ddd;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explorez Agadir autrement avec rent<span style="color: #10B1BC;">IT<span></h1>
+    <p>Location de trottinettes électriques à l'heure – Livraison gratuite à domicile !</p>
+    <a class="btn" href="rdv.html">Réservez maintenant</a>
+  </header>
+
+  <section class="features">
+    <div class="feature">
+      <h3>🛵 Location flexible</h3>
+      <p>Louez votre trottinette à l'heure selon votre emploi du temps, dès 10 Dh/heure !</p>
+    </div>
+    <div class="feature">
+      <h3>📍 Livraison rapide</h3>
+      <p>Nous livrons directement chez vous à Agadir, pour un confort total sans vous déplacer.</p>
+    </div>
+    <div class="feature">
+      <h3>🌇 Parfait pour les touristes</h3>
+      <p>Explorez la ville, la plage et les souks d'Agadir en toute liberté et sans effort.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 rentIT. Tous droits réservés.
+  </footer>
+</body>
+</html>
