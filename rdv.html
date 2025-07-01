@@ -109,7 +109,7 @@
 
   <main>
     <h2 style="text-align: center; margin-bottom: 30px;">Réservez votre trottinette</h2>
-    <form action="https://wa.me/0644373744" method="get" target="_blank">
+    <form action="https://wa.me/212644373744" method="get" target="_blank">
 
       <div class="form-group">
         <label for="date">Date de réservation</label>
@@ -152,5 +152,28 @@
   <footer>
     &copy; 2025 rentIT - Agadir. Tous droits réservés.
   </footer>
+
+  <script>
+  document.getElementById('reservationForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Récupérer les valeurs
+    const date = document.getElementById('date').value;
+    const heure = document.getElementById('heure').value;
+    const duree = document.getElementById('duree').value;
+    const adresse = document.getElementById('adresse').value;
+
+    // Construire le message
+    let message = `Bonjour, je souhaite réserver une trottinette :%0A📅 Date : ${date}%0A🕒 Heure : ${heure}%0A⏳ Durée : ${duree} heure(s)%0A📍 Adresse : ${adresse ? adresse : "Non précisée"}`;
+
+    // Mettre le numéro de téléphone ici (sans le 0, avec 212)
+    const phone = '212644373744'; // remplace par ton numéro !
+
+    // Rediriger vers WhatsApp
+    const url = `https://wa.me/${phone}?text=${message}`;
+    window.open(url, '_blank');
+  });
+</script>
+  
 </body>
 </html>
