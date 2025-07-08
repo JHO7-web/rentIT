@@ -104,7 +104,7 @@
 <body>
   <header>
     <h1>Bienvenue sur rentIT</h1>
-    <p>Louez votre trottinette électrique à Agadir pour seulement <strong>10 Dh/heure</strong> avec livraison gratuite à domicile !</p>
+    <p>Louez votre trottinette électrique à Agadir pour seulement <strong>20 Dh/heure</strong> avec livraison gratuite à domicile !</p>
   </header>
 
   <main>
@@ -115,10 +115,11 @@
         <input type="date" name="date" id="date" required />
       </div>
 
-      <div class="form-group">
-        <label for="heure">Heure de début</label>
-        <input type="time" name="heure" id="heure" required />
-      </div>
+     <div class="form-group">
+      <label for="heure">Heure de début</label>
+      <input type="time" name="heure" id="heure" required step="3600">
+    </div>
+
 
       <div class="form-group">
         <label for="duree">Durée souhaitée (heures)</label>
@@ -131,9 +132,6 @@
         </select>
       </div>
 
-      <div class="remarque">
-        📌 <strong>Remarque :</strong> Lors de la livraison, vous signerez une charte de responsabilité.
-      </div>
 
       <div class="note">
         En cliquant sur le bouton ci-dessous, vous serez redirigé vers WhatsApp avec les infos remplies.
